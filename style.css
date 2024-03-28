@@ -1,0 +1,35 @@
+/* style.css */
+body {
+    background-color: #333; /* Dark gray background */
+    color: #ddd; /* Dull white text */
+    font-family: Arial, sans-serif;
+}
+
+.note-content {
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #444; /* Slightly lighter gray for the content boxes */
+    border: 1px solid #555; /* Adding a bit of border to distinguish the content area */
+}
+
+.note-btn {
+    background-color: #555; /* Darker gray for buttons */
+    color: #ddd; /* Dull white text */
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.note-btn:hover {
+    background-color: #666; /* Lighter gray when hovered for better UI feedback */
+}
+
+/* Optional: if you want to change the color when a section is active */
+.note-btn.active {
+    background-color: #666;
+    color: #fff;
+}
