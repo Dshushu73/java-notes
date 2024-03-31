@@ -1,35 +1,51 @@
-/* style.css */
 body {
-    background-color: #333; /* Dark gray background */
-    color: #ddd; /* Dull white text */
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
 }
 
-.note-content {
-    display: none;
-    overflow: hidden;
-    padding: 15px;
-    background-color: #444; /* Slightly lighter gray for the content boxes */
-    border: 1px solid #555; /* Adding a bit of border to distinguish the content area */
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-.note-btn {
-    background-color: #555; /* Darker gray for buttons */
-    color: #ddd; /* Dull white text */
+.sidebar {
+    width: 200px;
+    background-color: #444;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
     padding: 10px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-.note-btn:hover {
-    background-color: #666; /* Lighter gray when hovered for better UI feedback */
-}
-
-/* Optional: if you want to change the color when a section is active */
-.note-btn.active {
-    background-color: #666;
     color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.content-collapse {
+    background-color: #555;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.content-collapse:not(:last-child) {
+    margin-bottom: 10px;
 }
